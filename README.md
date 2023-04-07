@@ -8,10 +8,9 @@ I'm a Software Engineer, BlockChain Web3 Developer, I'm excited about Tech, Secu
 
 **Here's a quick summary about me**:
 
-- 😊 Pronouns: He/Him
 - 🌱 I’m currently learning BlockChain Developement on DiamundLabs
 - 😊 I’m looking for help with open source projects, hackathons, internships, and entry-level opportunities.
-- 💼 Job interests: BlockChain Developer, Blockchain Quality Engineer, Full Stack Web Developer
+- 💼 Job interests:  Full Stack Web Developer, BlockChain Developer, Blockchain Engineer, Backend Developer
 - 📫 You can [view my portfolio website](https://kyilax-portfolio.vercel.app/) and contact me by emailing osazeepeter79@gmail.com.
 
 ---
