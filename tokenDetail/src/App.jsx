@@ -60,12 +60,6 @@ function App() {
   };
   return (
     <div className="token">
-      <nav className="token__nav">
-        <p>
-          Daniel Osariemen Osazee <span>- DiamundLabs</span>
-        </p>
-      </nav>
-
       <h1>Token Details Viewer</h1>
       <form onSubmit={getDetail} className="token__input">
         <input
@@ -108,6 +102,9 @@ function App() {
 
       <footer className="token__footer">
         <p>DiamundLabs Assessment</p>
+        <br />
+
+        <p>Daniel Osariemen Osazee </p>
       </footer>
     </div>
   );

@@ -11,20 +11,6 @@
   color: aliceblue;
 }
 
-.token__nav {
-  top: 0;
-  position: fixed;
-  background: #041b30;
-  padding: 20px;
-  border: 1px solid snow;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.token__nav > p {
-  color: whitesmoke;
-}
 .token__nav > p > span {
   color: blanchedalmond;
 }
@@ -37,6 +23,8 @@
   border: 1px solid snow;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -80,6 +68,9 @@ p {
 }
 
 .no__token {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   margin-top: 7%;
   color: rgb(192, 192, 192);
   font-size: 24px;
