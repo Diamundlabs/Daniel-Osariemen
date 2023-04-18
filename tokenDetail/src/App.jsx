@@ -17,6 +17,10 @@ function App() {
       e.preventDefault();
       console.log("TOKEN details:");
 
+      if (!window.ethereum) {
+        alert("Please enable web3");
+      }
+
       const erc20 = new web3.eth.Contract(abi, contractAddress);
 
       let tokenSupply = erc20.methods
@@ -71,33 +75,37 @@ function App() {
 
       {name ? (
         <div className="token__details">
-          {name && (
-            <div className="token__details__item">
-              <h2>Token Name</h2>
-              <p>{name}</p>
-            </div>
-          )}
-          {owner && (
-            <div className="token__details__item">
-              <h2>Owner</h2>
-              <p className="long-text">{owner}</p>
-            </div>
-          )}
-          {decimals && (
-            <div className="token__details__item">
-              <h2>Decimals</h2>
-              <p>{decimals}</p>
-            </div>
-          )}
-          {supply && (
-            <div className="token__details__item">
-              <h2>Total Supply </h2>
-              <p>{supply}</p>
-            </div>
-          )}
+          <>
+            {name && (
+              <div className="token__details__item">
+                <h2>Token Name</h2>
+                <p>{name}</p>
+              </div>
+            )}
+            {owner && (
+              <div className="token__details__item">
+                <h2>Owner</h2>
+                <p className="long-text">{owner}</p>
+              </div>
+            )}
+            {decimals && (
+              <div className="token__details__item">
+                <h2>Decimals</h2>
+                <p>{decimals}</p>
+              </div>
+            )}
+            {supply && (
+              <div className="token__details__item">
+                <h2>Total Supply </h2>
+                <p>{supply}</p>
+              </div>
+            )}
+          </>
         </div>
       ) : (
-        <p className="no__token"> Enter a contract address to view details</p>
+        <div className="no__token">
+          <p> Enter a contract address to view details</p>
+        </div>
       )}
 
       <footer className="token__footer">
